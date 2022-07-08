@@ -1,0 +1,142 @@
+html{
+    scroll-behavior: smooth;
+    font-family: 'Noto Sans';
+}
+body{
+    margin: 0 auto;
+    padding: 0;
+}
+.searchResult {
+    display: inline-block;
+    text-align: center;
+    flex-wrap: wrap;
+    vertical-align: top;
+}
+
+.searchResult div {
+    margin: 10px;
+    max-width: 300px;
+}
+
+.searchResult div:hover{
+    box-shadow: 0 0 15px 1px #888;
+    border-radius: 8px;
+}
+
+.searchResult img {
+    height: 170px;
+    width: 300px;
+    object-fit: cover;
+    border: 1px solid #000;
+}
+.searchbar{
+    padding: 10px;
+    background-color: #e6e6e6;
+    text-align: center;
+}
+.searchbar input{
+    padding: 6px;
+    border: none;
+    margin-right: 3px;
+}
+.searchbar select{
+    padding: 5px;
+    border: none;
+    margin-right: 5px;
+}
+.searchbar button{
+    padding: 6px 10px;
+    background-color: #FFF;
+    border-radius: 0;
+}
+.searchbar button:hover{
+    background-color: #EEE;
+    transition: .3s;
+    cursor: pointer;
+}
+button {
+    padding: 5px 10px;
+    margin: 3px 8px;
+    border-radius: 20px;
+    border: 1px solid #000;
+}
+.sidebar-c{
+    margin: 10px
+}
+
+table.sidebarTable {
+    margin: 10px 0;
+}
+
+.sidebarTable, .sidebarTable tr, .sidebarTable td, .sidebarTable th {
+    border-collapse: collapse;
+    border: 1px solid #000;
+}
+
+.sidebarTable td {
+    padding: 5px;
+}
+
+.detailsView{
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 20px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    padding: 10px;
+}
+.detailsView h1{
+    font-size: 28px;
+    margin: 10px;
+}
+.detailsView p{
+    margin: 0;
+    display: inline-block;
+}
+.detailsView img.detailsimg {
+    margin: 20px 0;
+    border-radius: 10px;
+    width: 70%;
+    object-fit: cover;
+    border: 1px solid #000;
+}
+.detailsView ul, li{
+    text-align: left;
+}
+.detailsView .buttons{
+    margin: 10px 0;
+}
+
+div.summaryView{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+/* --- sidebar --- */
+/* .debug {
+    border-style: solid;
+} */
+
+.flexParent {
+    display: flex;
+    height: 100%;
+}
+
+.sidebar {
+    flex: 0.25;
+    overflow: scroll;
+    background-color: #ebfaf7;
+}
+
+.mainContent {
+    flex: 0.75;
+    overflow: scroll;
+}
+
+/* responsive */
+@media (max-width: 400px){
+    .flexParent{
+        display: block;
+    }
+}
